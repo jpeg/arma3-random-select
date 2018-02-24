@@ -34,4 +34,11 @@ _near = [];
     } forEach crew _x;
 } forEach (_unit nearEntities [["LandVehicle", "Air"], 20]) - [_unit];
 
-[_unit, _near] call lex_fnc_taskDialog;
+if (count _near > 0) then
+{
+    [_unit, _near] call lex_fnc_taskDialog;
+}
+else
+{
+    hintSilent "No one to select";
+};

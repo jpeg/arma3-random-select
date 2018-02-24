@@ -24,4 +24,11 @@ _crew = [];
     };
 } forEach (crew vehicle _unit) - [_unit];
 
-[_unit, _crew] call lex_fnc_taskDialog;
+if (count _crew > 0) then
+{
+    [_unit, _crew] call lex_fnc_taskDialog;
+}
+else
+{
+    hintSilent "No one to select";
+};

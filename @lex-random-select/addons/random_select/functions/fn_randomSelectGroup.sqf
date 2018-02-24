@@ -23,4 +23,11 @@ _group = [];
     };
 } forEach (units group _unit) - [_unit];
 
-[_unit, _group] call lex_fnc_taskDialog;
+if (count _group > 0) then
+{
+    [_unit, _group] call lex_fnc_taskDialog;
+}
+else
+{
+    hintSilent "No one to select";
+};
