@@ -24,4 +24,4 @@ _units = [];
     };
 } forEach allUnits - [_unit];
 
-[_unit, _units] call lex_fnc_randomSelect;
+[_unit, _units] call lex_fnc_taskDialog;

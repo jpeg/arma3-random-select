@@ -10,5 +10,7 @@ class CfgPatches {
     };
 };
 
+#include "defines.hpp"
+#include "dialogs.hpp"
 #include "CfgFunctions.hpp"
 #include "CfgVehicles.hpp"

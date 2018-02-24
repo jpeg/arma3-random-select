@@ -34,4 +34,4 @@ _near = [];
     } forEach crew _x;
 } forEach (_unit nearEntities [["LandVehicle", "Air"], 20]) - [_unit];
 
-[_unit, _near] call lex_fnc_randomSelect;
+[_unit, _near] call lex_fnc_taskDialog;

@@ -23,4 +23,4 @@ _group = [];
     };
 } forEach (units group _unit) - [_unit];
 
-[_unit, _group] call lex_fnc_randomSelect;
+[_unit, _group] call lex_fnc_taskDialog;
